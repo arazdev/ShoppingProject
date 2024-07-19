@@ -1,17 +1,21 @@
 /* Header */
 header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   display: flex;
   justify-content: space-around;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #343a40;
-  color: #ffffff;
-  border-bottom: 1px solid #495057;
-  z-index: 1000;
+  width: 100%;
+  background-color: var(--button-background-color);
+  padding: 1em 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2em;
+}
+header a {
+  margin: 0 1em;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+header a:hover {
+  color: var(--primary-hover-color);
 }
 
 /* Style the logo or header title */
@@ -38,9 +42,74 @@ nav a:hover {
   color: #17a2b8;
 }
 
-/* Adjust for page content to avoid overlap */
-body {
-  padding-top: 60px;
+/* Landing Page */
+
+.main-page {
+  background-image: url('/image1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+  height: 100vh; /* Make it cover the full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white; /* Ensures text is readable on the background image */
+}
+
+.main-page-content {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a dark overlay to improve text readability */
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.main-page h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.main-page p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.main-page button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #646cff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.main-page button:hover {
+  background-color: #535bf2;
+}
+
+@media (max-width: 768px) {
+  .main-page h1 {
+    font-size: 2.5em;
+  }
+
+  .main-page p {
+    font-size: 1em;
+  }
+
+  .main-page button {
+    font-size: 0.9em;
+  }
 }
 
 /* Product Listing Page*/
@@ -69,6 +138,9 @@ body {
 /* Shopping Cart Page*/
 
 .shopping-cart-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
