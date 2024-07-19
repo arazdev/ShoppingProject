@@ -10,9 +10,7 @@ import { HashRouter as Router } from "react-router-dom";
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
-      <Router basename="/ShoppingProject">
-        <App />
-      </Router>
+      <App />
     </Provider>
   </React.StrictMode>,
 )
