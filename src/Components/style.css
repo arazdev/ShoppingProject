@@ -8,39 +8,39 @@ header {
   justify-content: space-around;
   align-items: center;
   padding: 10px 20px;
-  background-color: #343a40; /* Dark background color */
-  color: #ffffff; /* White text color */
-  border-bottom: 1px solid #495057; /* Darker border color */
-  z-index: 1000; /* Ensure the header stays on top of other elements */
+  background-color: #343a40;
+  color: #ffffff;
+  border-bottom: 1px solid #495057;
+  z-index: 1000;
 }
 
 /* Style the logo or header title */
 .header-logo {
   font-size: 24px;
   font-weight: bold;
-  color: #ffffff; /* White text color */
+  color: #ffffff;
 }
 
 /* Style the navigation links */
 nav {
   display: flex;
-  gap: 20px; /* Space between links */
+  gap: 20px;
 }
 
 nav a {
   text-decoration: none;
-  color: #ffffff; /* White text color */
+  color: #ffffff;
   font-size: 16px;
-  transition: color 0.3s ease; /* Smooth transition for hover effect */
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #17a2b8; /* Light blue color on hover */
+  color: #17a2b8;
 }
 
 /* Adjust for page content to avoid overlap */
 body {
-  padding-top: 60px; /* Height of the header plus some spacing */
+  padding-top: 60px;
 }
 
 /* Product Listing Page*/
@@ -51,6 +51,7 @@ body {
   padding: 20px; /* Space around the grid */
   max-width: 1280px; /* Ensure it fits within your main container */
   margin: 0 auto; /* Center align the grid container */
+  text-align: center;
 }
 
 .image-container {
@@ -65,15 +66,14 @@ body {
   object-fit: cover; /* Ensures the image covers the container */
 }
 
-/* Shopping Car Page*/
-
-/* shopping-cart-page.css */
+/* Shopping Cart Page*/
 
 .shopping-cart-page {
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
+  text-align: center;
 }
 
 h1 {

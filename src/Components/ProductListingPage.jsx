@@ -16,18 +16,18 @@ const ProductListingPage = () => {
 
     const dispatch = useDispatch();
 
-    const handleAddToCart = (product) => {
-        dispatch(addToCart(product));
+    const handleAddToCart = (item) => {
+        dispatch(addToCart(item));
     }
 
     return (
         <div className='product-grid'>
-            {items.map((product) => (
-                <div key={product.id} className='image-container'>
-                    <img src={product.thumbnail} alt={product.name} className='image-style' />
-                    <h3>{product.name}</h3>
-                    <p>${product.price}</p>
-                    <button onClick={() => handleAddToCart(product)}>Add to Cart</button>
+            {items.map((item) => (
+                <div key={item.id} className='image-container'>
+                    <img src={item.thumbnail} alt={item.name} className='image-style' />
+                    <h3>{item.name}</h3>
+                    <p>${item.price}</p>
+                    <button onClick={() => handleAddToCart(item)}>Add to Cart</button>
                 </div>
             ))}
         </div>
