@@ -6,7 +6,7 @@ import Header from './Components/Header';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/ShoppingProject">
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />
